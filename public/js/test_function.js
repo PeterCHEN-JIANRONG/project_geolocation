@@ -15,14 +15,6 @@ function getDateTime(time) {
   return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
 }
 
-function checkTime(st){
-  var des = new Date(st).getTime()
-  var now = Date.now()
-  var diff = des - now
-  return diff
-}
-
 module.exports = {
-  getDateTime,
-  checkTime
+  getDateTime
 }
